@@ -1,0 +1,126 @@
+{
+  "origin_addresses": [
+    "Claremont, CA, USA",
+    "Seattle, WA, USA",
+    "Philadelphia, PA, USA"
+  ],
+  "status": "OK",
+  "rows": [
+    {
+      "elements": [
+        {
+          "distance": {
+            "text": "1,871 km",
+            "value": 1871028
+          },
+          "status": "OK",
+          "duration": {
+            "text": "17 hours 35 mins",
+            "value": 63278
+          }
+        },
+        {
+          "distance": {
+            "text": "4,350 km",
+            "value": 4350468
+          },
+          "status": "OK",
+          "duration": {
+            "text": "1 day 14 hours",
+            "value": 137905
+          }
+        },
+        {
+          "distance": {
+            "text": "4,749 km",
+            "value": 4749076
+          },
+          "status": "OK",
+          "duration": {
+            "text": "1 day 19 hours",
+            "value": 154013
+          }
+        }
+      ]
+    },
+    {
+      "elements": [
+        {
+          "distance": {
+            "text": "1 m",
+            "value": 0
+          },
+          "status": "OK",
+          "duration": {
+            "text": "1 min",
+            "value": 0
+          }
+        },
+        {
+          "distance": {
+            "text": "5,306 km",
+            "value": 5305818
+          },
+          "status": "OK",
+          "duration": {
+            "text": "2 days 0 hours",
+            "value": 172868
+          }
+        },
+        {
+          "distance": {
+            "text": "4,901 km",
+            "value": 4901284
+          },
+          "status": "OK",
+          "duration": {
+            "text": "1 day 21 hours",
+            "value": 160786
+          }
+        }
+      ]
+    },
+    {
+      "elements": [
+        {
+          "distance": {
+            "text": "4,540 km",
+            "value": 4540405
+          },
+          "status": "OK",
+          "duration": {
+            "text": "1 day 17 hours",
+            "value": 149166
+          }
+        },
+        {
+          "distance": {
+            "text": "1,924 km",
+            "value": 1923994
+          },
+          "status": "OK",
+          "duration": {
+            "text": "17 hours 21 mins",
+            "value": 62435
+          }
+        },
+        {
+          "distance": {
+            "text": "498 km",
+            "value": 497576
+          },
+          "status": "OK",
+          "duration": {
+            "text": "5 hours 6 mins",
+            "value": 18331
+          }
+        }
+      ]
+    }
+  ],
+  "destination_addresses": [
+    "Seattle, WA, USA",
+    "Miami, FL, USA",
+    "Boston, MA, USA"
+  ]
+}
