@@ -9,7 +9,7 @@
 # 3. The same function would do the same thing for the second movie 
 # 4. write another function that takes in the names of the two movies in the ranker.com page and grabs the page
 # 5. then use bs4 to parse the IMDB 2017 movies ranking page and check the two movies' respective ranking is correct according to their rotten tomato scores
-
+ 
 
 import requests
 from bs4 import BeautifulSoup
