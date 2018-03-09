@@ -1,21 +1,7 @@
-#
-# starting examples for cs35, week2 "Web as Input"
-# name: Tiancheng(Tony) Jiang 
-
 import requests
 import string
 import json
 
-
-# ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-#
-# Problem 2 starter code
-#
-# ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-#
-#
-#
 
 def apple_api(artist_name):
     """ takes a string (name) returns the appleId
@@ -36,13 +22,11 @@ def apple_api(artist_name):
 
     # Here, you should return the artist id:
     #
-    # Note: it's helpful to find the iTunes artistId and return it here
-    # (this hasn't been done yet... try it!) 
+
     filename_to_read="appledata.json"
     f = open( filename_to_read, "r" )
     string_data = f.read()
     data = json.loads( string_data )
-    #print("the raw json data is\n\n", data, "\n")
 
     return data["results"][0]["artistId"]   # This is probably _not_ the correct answer...
 
@@ -87,7 +71,6 @@ def apple_api_lookup_process():
     f = open( filename_to_read, "r" )
     string_data = f.read()
     data = json.loads( string_data )
-   # print("the raw json data is\n\n", data, "\n")
 
     # for live investigation, here's the full data structure
     return data

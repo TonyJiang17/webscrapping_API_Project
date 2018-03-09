@@ -1,43 +1,6 @@
-#
-# starting examples for cs35, week1 "Web as Input"
-# name: Tiancheng(Tony) Jiang 
-
 import requests
 import string
 import json
-
-"""
-Examples to run for problem 1:
-
-Web scraping, the basic command (Thanks, Prof. Medero!)
-
-#
-# basic use of requests:
-#
-url = "https://www.cs.hmc.edu/~dodds/demo.html"  # try it + source
-result = requests.get(url)
-text = result.text   # provides the source as a large string...
-
-#
-# try it for another site...
-#
-
-
-
-
-#
-# let's try the Open Google Maps API -- also provides JSON-formatted data
-#   See the webpage for the details and allowable use
-#
-# Try this one by hand - what are its parts?
-# http://maps.googleapis.com/maps/api/distancematrix/json?origins=%22Claremont,%20CA%22&destinations=%22Seattle,%20WA%22&mode=%22walking%22
-#
-# Take a look at the result -- perhaps using this nice site for editing + display:
-#
-# A nice site for json display and editing:  https://jsoneditoronline.org/
-#
-#
-"""
 
 # ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 #
@@ -46,7 +9,7 @@ text = result.text   # provides the source as a large string...
 # ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 #
-# example of calling the google distance API
+# calling the google distance API
 #
 def google_api(Sources, Dests):
     """ Inputs: Sources is a list of starting places
@@ -56,7 +19,6 @@ def google_api(Sources, Dests):
              from all Sources to all Dests. 
         It saves the result to distances.json
 
-        Problem: right now it only works with the FIRST of each list!
     """
     print("Start of google_api")
 
@@ -68,7 +30,7 @@ def google_api(Sources, Dests):
 
     start = Sources
     end = Dests
-    my_mode="driving"  # walking, biking
+    my_mode="driving"  # can be replaced by walking, biking, etc 
 
     inputs={"origins":start,"destinations":end,"mode":my_mode}
 
@@ -88,8 +50,6 @@ def google_api(Sources, Dests):
     print("\nFile", filename_to_save, "written.")
     # no need to return anything, since we're better off reading it from file later...
     return
-
-
 
 #
 # example of handling json data via Python's json dictionary
@@ -137,8 +97,6 @@ def json_process():
 
     
     return JD
-
-
 
 
 #

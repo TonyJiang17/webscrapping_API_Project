@@ -1,17 +1,4 @@
-# coding: utf-8
 
-"""
-#
-# Here is an example of using the Web's Wisdom to answer the question
-#
-#     Who will win the superbowl next weekend... ?
-#
-#         Note: not limited to next weekend's teams!
-#         Another note: gambling on future outcomes using this technique _not_ recommended!
-# 
-#     use/alter main() to find out the results of our predictions!  :-)
-#
-"""
 # 2016:
 # team_1 = 'carolina-panthers'  
 # team_2 = 'denver-broncos'     
@@ -24,14 +11,6 @@
 # team_1 = 'new-england-patriots'
 # team_2 = 'philadelphia-eagles'
 
-# 
-# Here is our "web scavenging" approach to the winner and the score:
-#
-# 1. first we grab the pages that define each team's colors
-# 2. then, use bs4 to parse those pages and return a list of colors
-# 3. then, grab the page that defines the popularity of team colors
-# 4. finally, use bs4 to compute a score for each team based on its colors
-#
 
 import requests
 from bs4 import BeautifulSoup
@@ -56,10 +35,6 @@ def get_color_page():
     return soup
 
 
-
-#
-# find_color_score( color, soup )
-#
 def find_color_score( color_name, soup ):
     """ find_color_score takes in color_name (a string represnting a color)
         and soup, a Beautiful Soup object returned from a successful run of
@@ -196,7 +171,6 @@ def main():
     print("Team 2 (" + team_2 + ") colors:", team_colors_2)
 
 
-    # Next, we grab the color-popularity page (and parse it into
     # a BeautifulSoup object...
     # 
     color_popularity_soup = get_color_page()
@@ -215,13 +189,9 @@ def main():
     print("Team 1 (" + team_1 + ") predicted final score:", sum(team_1_scores))
     print("Team 2 (" + team_2 + ") predicted score:", sum(team_2_scores))
 
-
-    # that's it!
     return
 
-#
-# our conditional, kicking off all execution...
-#
+
 if __name__ == "__main__":
     main()  # hike!
 

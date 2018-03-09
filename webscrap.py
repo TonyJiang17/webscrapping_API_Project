@@ -1,7 +1,4 @@
-#hw1pr3.py
-#Name: Tiancheng(Tony) Jiang
-
-#Question: I want to test whether ranker.com's The Best Moves of 2017 is accurate according to Rotten Tomato's score 
+#Objective: I want to test whether ranker.com's The Best Moves of 2017 is accurate according to Rotten Tomato's score 
 # Here is my approach to the winner and the score:
 #
 # 1. first I will create a function that takes in a movie name that grabs the movie's Rotten Tomato's site
@@ -180,5 +177,5 @@ def main():
     return
 
 if __name__ == "__main__":
-    main()  # hike!
+    main()  
 
